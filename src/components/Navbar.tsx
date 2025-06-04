@@ -28,6 +28,7 @@ const Navbar = () => {
     const loggedIn = userKeys.some((key) => key.includes('@') && localStorage.getItem(key));
     setIsLoggedIn(loggedIn);
   }, [location.pathname]);
+  
 
   const handleSignOut = () => {
     // Clear all user data from localStorage
